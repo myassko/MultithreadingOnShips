@@ -44,9 +44,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums.cs" />
+    <Compile Include="PierLoader.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Ship.cs" />
+    <Compile Include="ShipGenerator.cs" />
     <Compile Include="Tunnel.cs" />
   </ItemGroup>
   <ItemGroup>
