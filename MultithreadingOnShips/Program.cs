@@ -17,7 +17,7 @@ namespace MultithreadingOnShips
             SecondaryThread.Name = "Многопоточность на корабликах";
             SecondaryThread.Start();
 
-            SecondaryThread.Join();
+            SecondaryThread.Join();//ждет, когда поток завершит свою работу
             Console.WriteLine($"Поток {SecondaryThread.Name} закончил работу");
         }
         static public void Start()

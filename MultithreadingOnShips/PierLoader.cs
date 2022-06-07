@@ -11,7 +11,7 @@ namespace MultithreadingOnShips
     {
         public Tunnel Tunnel { get; }
 
-        public Types ShipType { get; }
+        public Types ShipType { get; } //какой тип корабля может загружать причал
 
         public bool IsAlive { get; set; } = true;
 
@@ -28,7 +28,7 @@ namespace MultithreadingOnShips
             {
                 try
                 {
-                    Thread.Sleep(1000);
+                    Thread.Sleep(1000);// дает фору генератору
                     Ship ship = Tunnel.GetShip(ShipType);
                     var th = Thread.CurrentThread;
                     if (ship != null)

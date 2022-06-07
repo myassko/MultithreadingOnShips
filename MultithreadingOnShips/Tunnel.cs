@@ -9,17 +9,17 @@ namespace MultithreadingOnShips
 {
     public class Tunnel
     {
-        public object block = new object();
+        public object block = new object();// для синхронизации потоков
         public List<Ship> tunnel { get; }
         public int MinShipsInTunnel { get; } = 0;
         public int MaxShipsInTunnel { get; } = 5;
 
-        private int shipCounter = 0;
+        private int shipCounter = 0;//в данный момент
 
 
         public Tunnel()
         {
-            tunnel = new List<Ship>();
+            tunnel = new List<Ship>();//выделяем память 
         }
 
 
@@ -29,7 +29,7 @@ namespace MultithreadingOnShips
             {
                 lock (block)
                 {
-                    var th = Thread.CurrentThread;
+                    var th = Thread.CurrentThread;//поток ,который работает на данный момент
                     if (shipCounter < MaxShipsInTunnel)
                     {
                         Console.WriteLine($"Корабль прибыл в тоннель\nТип-{ship.Type} Размер-{ship.Size} Название потока-{th.Name}\n\n");
@@ -63,7 +63,7 @@ namespace MultithreadingOnShips
                         Monitor.PulseAll(block);
                         foreach (var sh in tunnel)
                         {
-                            if (sh.Type == type)
+                            if (sh.Type == type)//ищем нужный тип корабля
                             {
                                 shipCounter -= 1;
                                 Console.WriteLine($"Корабль отправился к причалу\nТип-{sh.Type} Размер-{sh.Size} Название потока-{th.Name}\n\n");

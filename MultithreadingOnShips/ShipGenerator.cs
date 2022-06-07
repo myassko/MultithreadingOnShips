@@ -9,11 +9,11 @@ namespace MultithreadingOnShips
 {
     public class ShipGenerator
     {
-        public object block = new object();
+        public object block = new object();//выделение памяти на заглушку
         public Tunnel Tunnel { get; }
-        public int ShipCount { get; private set; }
+        public int ShipCount { get; private set; }//сколько  кораблей всего нужно создать
 
-        private int shipWasCreated = 0;
+        private int shipWasCreated = 0;//сколько на данный момент создано кораблей
 
         public ShipGenerator(Tunnel tunnel, int shipCount)
         {
