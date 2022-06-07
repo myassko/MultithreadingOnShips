@@ -30,16 +30,16 @@ namespace MultithreadingOnShips
             PierLoader BreadPierLoader = new PierLoader(tunnel, Types.Bread);
             PierLoader ClothesPierLoader = new PierLoader(tunnel, Types.Clothe);
 
-            Thread GeneratorThread = new Thread(new ThreadStart(generator.Start));
+            Thread GeneratorThread = new Thread(generator.Start);
             GeneratorThread.Name = "Генерация";
 
-            Thread BananaThread = new Thread(new ThreadStart(BananaPierLoader.Start));
+            Thread BananaThread = new Thread(BananaPierLoader.Start);
             BananaThread.Name = "Бананы";
 
-            Thread BreadThread = new Thread(new ThreadStart(BreadPierLoader.Start));
+            Thread BreadThread = new Thread(BreadPierLoader.Start);
             BreadThread.Name = "Хлеб";
 
-            Thread ClothesThread = new Thread(new ThreadStart(ClothesPierLoader.Start));
+            Thread ClothesThread = new Thread(ClothesPierLoader.Start);
             ClothesThread.Name = "Одежда";
 
             List<Tuple<PierLoader, Thread>> pierLoadersAndThreads = new List<Tuple<PierLoader, Thread>>();

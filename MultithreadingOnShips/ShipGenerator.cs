@@ -45,14 +45,14 @@ namespace MultithreadingOnShips
 
         static public Sizes CreateSize()
         {
-            var a = Enum.GetValues(typeof(Sizes));
-            return (Sizes)a.GetValue(new Random().Next(a.Length));
+            var sizes = Enum.GetValues(typeof(Sizes));
+            return (Sizes)sizes.GetValue(new Random().Next(sizes.Length));
         }
 
         static public Types CreateType()
         {
-            var a = Enum.GetValues(typeof(Types));
-            return (Types)a.GetValue(new Random().Next(a.Length));
+            var types = Enum.GetValues(typeof(Types));
+            return (Types)types.GetValue(new Random().Next(types.Length));
         }
     }
 }
