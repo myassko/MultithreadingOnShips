@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace MultithreadingOnShips
 {
-    internal class Enums
+    //Все типы кораблей
+    public enum Types
     {
+        Banana,
+        Clothe,
+        Bread
     }
+    //Все размеры корабли
+    public enum Sizes
+    {
+        Small = 10,
+        Average = 50,
+        Huge = 100
+    }
+
 }
