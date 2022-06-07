@@ -1,0 +1,8 @@
+D:\c#\MyAttempts\Multithreading\MultithreadingOnShips\MultithreadingOnShips\bin\Debug\MultithreadingOnShips.exe.config
+D:\c#\MyAttempts\Multithreading\MultithreadingOnShips\MultithreadingOnShips\bin\Debug\MultithreadingOnShips.exe
+D:\c#\MyAttempts\Multithreading\MultithreadingOnShips\MultithreadingOnShips\bin\Debug\MultithreadingOnShips.pdb
+D:\c#\MyAttempts\Multithreading\MultithreadingOnShips\MultithreadingOnShips\obj\Debug\MultithreadingOnShips.csproj.AssemblyReference.cache
+D:\c#\MyAttempts\Multithreading\MultithreadingOnShips\MultithreadingOnShips\obj\Debug\MultithreadingOnShips.csproj.SuggestedBindingRedirects.cache
+D:\c#\MyAttempts\Multithreading\MultithreadingOnShips\MultithreadingOnShips\obj\Debug\MultithreadingOnShips.csproj.CoreCompileInputs.cache
+D:\c#\MyAttempts\Multithreading\MultithreadingOnShips\MultithreadingOnShips\obj\Debug\MultithreadingOnShips.exe
+D:\c#\MyAttempts\Multithreading\MultithreadingOnShips\MultithreadingOnShips\obj\Debug\MultithreadingOnShips.pdb
